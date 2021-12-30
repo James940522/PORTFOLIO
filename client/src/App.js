@@ -1,5 +1,12 @@
+import Nav from "./Components/Nav";
+
 function App() {
-  return <div>웹</div>;
+  return (
+    <>
+      <Nav />
+      <div>app</div>
+    </>
+  );
 }
 
 export default App;
