@@ -1,6 +1,8 @@
 import "./index.scss";
 
 function Nav() {
+  // window.scrollY
+
   const moveScroll = (key) => {
     if (key === "main") {
       console.log("main");
@@ -22,25 +24,22 @@ function Nav() {
           JM`s Portfolio
         </h1>
         <nav className="menu-section">
-          <span
-            className="navigation menu"
-            onClick={(e) => moveScroll("about")}
-          >
+          <span className="navigation menu" onClick={() => moveScroll("about")}>
             About me
           </span>
           <span
             className="navigation menu"
-            onClick={(e) => moveScroll("skills")}
+            onClick={() => moveScroll("skills")}
           >
             Skills
           </span>
           <span
             className="navigation menu"
-            onClick={(e) => moveScroll("project")}
+            onClick={() => moveScroll("project")}
           >
             Project
           </span>
-          <span className="navigation menu" onClick={(e) => moveScroll("link")}>
+          <span className="navigation menu" onClick={() => moveScroll("link")}>
             Link
           </span>
         </nav>
