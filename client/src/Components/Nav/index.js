@@ -1,7 +1,19 @@
+import { useState, useEffect, useRef } from "react";
+
 import "./index.scss";
 
 function Nav() {
+  const [scrollY, setScrollY] = useState(0);
   // window.scrollY
+
+  const updateScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    console.log(scrollY);
+    window.addEventListener("scroll", updateScroll);
+  }, [scrollY]);
 
   const moveScroll = (key) => {
     if (key === "main") {
@@ -19,7 +31,7 @@ function Nav() {
 
   return (
     <header>
-      <div id="navigation-bar">
+      <div id={scrollY < 100 ? "navigation-bar" : ""}>
         <h1 className="logo navigation" onClick={(e) => moveScroll("main")}>
           JM`s Portfolio
         </h1>
