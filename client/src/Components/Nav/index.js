@@ -4,7 +4,6 @@ import "./index.scss";
 
 function Nav() {
   const [scrollY, setScrollY] = useState(0);
-  // window.scrollY
 
   const updateScroll = () => {
     setScrollY(window.scrollY);
