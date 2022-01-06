@@ -1,12 +1,12 @@
 import Nav from "./Components/Nav";
-import Top from "./Components/Top";
+import Head from "./Components/Head";
 import "./app.scss";
 
 function App() {
   return (
     <div className="body">
       {/* <Nav /> */}
-      <Top />
+      <Head />
     </div>
   );
 }
