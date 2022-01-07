@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 import "./index.scss";
 
@@ -29,8 +29,8 @@ function Nav() {
   };
 
   return (
-    <header>
-      <div id={scrollY < 100 ? "navigation-bar" : ""}>
+    <header id={scrollY < 100 ? "nav-color-nonactive" : "nav-color-active"}>
+      <div id="navigation-bar">
         <h1 className="logo navigation" onClick={(e) => moveScroll("main")}>
           JM`s Portfolio
         </h1>

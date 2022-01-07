@@ -5,8 +5,9 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
-  background-color: #fff;
+  color: hsla(0, 0%, 100%, 0.7);
+  // box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
+  // background-color: #fff;
   //   color: hsla(0, 0%, 100%, 0.7);
   #navigation-bar {
     width: 100%;
@@ -17,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .logo {
       font-weight: 600;
       cursor: pointer;
@@ -24,7 +26,7 @@ header {
     .navigation {
       cursor: pointer;
       &:hover {
-        color: rgb(218, 139, 255);
+        color: #fff;
       }
     }
     .menu-section {
@@ -36,6 +38,17 @@ header {
         padding: 0 30px;
       }
     }
+  }
+}
+
+#nav-color-nonactive {
+  background-color: transparent;
+}
+#nav-color-active {
+  background-color: #fff;
+  color: black;
+  .navigation:hover {
+    color: orange;
   }
 }
 
