@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./index.scss";
 
-function Nav() {
+const Nav = () => {
   const [scrollY, setScrollY] = useState(0);
 
   const updateScroll = () => {
@@ -57,6 +57,6 @@ function Nav() {
       </div>
     </header>
   );
-}
+};
 
 export default Nav;

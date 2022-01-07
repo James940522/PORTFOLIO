@@ -23,16 +23,11 @@ header {
       font-weight: 600;
       cursor: pointer;
     }
-    .navigation {
-      cursor: pointer;
-      &:hover {
-        color: #fff;
-      }
-    }
     .menu-section {
       display: flex;
       align-items: center;
       .menu {
+        cursor: pointer;
         font-weight: 600;
         font-size: large;
         padding: 0 30px;
@@ -43,6 +38,9 @@ header {
 
 #nav-color-nonactive {
   background-color: transparent;
+  .navigation:hover {
+    color: #fff;
+  }
 }
 #nav-color-active {
   background-color: #fff;
