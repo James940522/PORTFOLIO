@@ -6,11 +6,9 @@
   width: 100%;
   max-width: 71.25rem;
   @include flexBox(flex, _, _, column);
-  flex: 1 2;
-  .about-title-container {
-    @include flexBox(flex, space-evenly, _, _);
-    margin: 0 auto 3rem;
-    .about-title-imgbox {
-    }
+  .about-data-box {
+    @include flexBox(flex, _, center, _);
+    flex-flow: row wrap;
+    width: 100%;
   }
 }

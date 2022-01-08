@@ -34,7 +34,7 @@ const aboutData = [
   {
     img: pencil,
     title: "교육",
-    contents: "코드스테이츠(30기 수료)",
+    contents: ["코드스테이츠", "(30기 수료)"],
   },
 ];
 
