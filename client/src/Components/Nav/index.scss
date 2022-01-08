@@ -1,24 +1,15 @@
+@import "../../Common.scss";
 header {
   display: block;
+  @include positionBox(fixed, 0, _, _, 0);
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 10;
   color: hsla(0, 0%, 100%, 0.7);
-  // box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
-  // background-color: #fff;
-  //   color: hsla(0, 0%, 100%, 0.7);
   #navigation-bar {
-    width: 100%;
+    @include widthHeight(100%, 40px);
+    @include marginPadding(0 auto, 1.25rem 2rem);
+    @include flexBox(flex, space-between, center, _);
     max-width: 71.25rem;
-    height: 40px;
-    margin: 0 auto;
-    padding: 1.25rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .logo {
       font-weight: 600;
       cursor: pointer;
@@ -28,8 +19,7 @@ header {
       align-items: center;
       .menu {
         cursor: pointer;
-        font-weight: 600;
-        font-size: large;
+        @include fontStyle(_, _, large, 600);
         padding: 0 30px;
       }
     }
@@ -44,6 +34,7 @@ header {
 }
 #nav-color-active {
   background-color: #fff;
+  box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
   color: black;
   .navigation:hover {
     color: orange;

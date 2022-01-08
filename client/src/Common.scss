@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  font-family: Noto Sans KR, sans-serif;
+  // background-color: turquoise;
+  // border: solid 1px red;
+}
+
+.body {
+  height: 2000px;
+  //
+}
+
+@mixin flexBox($display, $justify, $align, $direction) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin positionBox($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin marginPadding($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin borderStyle($basic, $radius) {
+  border: $basic;
+  border-radius: $radius;
+}
+
+@mixin background($size, $position, $repeat) {
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+@mixin fontStyle($fontColor, $fontStyle, $fontSize, $fontWeight) {
+  color: $fontColor;
+  font-style: $fontStyle;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}

@@ -1,7 +1,7 @@
 import Nav from "./Components/Nav";
 import Head from "./Components/Head";
 import About from "./Components/About";
-import "./app.scss";
+import "./Common.scss";
 
 const App = () => {
   return (

@@ -1,0 +1,16 @@
+@import "../../Common.scss";
+
+#about-section {
+  text-align: center;
+  @include marginPadding(0 auto, 4rem 2rem);
+  width: 100%;
+  max-width: 71.25rem;
+  @include flexBox(flex, _, _, column);
+  flex: 1 2;
+  .about-title-container {
+    @include flexBox(flex, space-evenly, _, _);
+    margin: 0 auto 3rem;
+    .about-title-imgbox {
+    }
+  }
+}

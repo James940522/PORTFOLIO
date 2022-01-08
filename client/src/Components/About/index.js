@@ -2,24 +2,24 @@ import AboutContents from "./aboutContents";
 import { aboutData } from "../../DummyData/data";
 import blackLink from "../../assets/black-link.png";
 
+import "./index.scss";
+
 const About = () => {
   console.log(aboutData);
   return (
-    <article>
-      <div>
-        <div className="about-section-title">
-          <div>
-            <img src={blackLink} alt="blackLink" width="32px" height="32px" />
-          </div>
-          <div>ABOUT ME</div>
+    <div id="about-section">
+      <div className="about-title-container">
+        <div className="about-title-imgbox">
+          <img src={blackLink} alt="blackLink" width="32px" height="32px" />
         </div>
-        <div>
-          {aboutData.map((el, idx) => {
-            return <AboutContents key={idx} contents={el} />;
-          })}
-        </div>
+        <h2 className="about-title">ABOUT ME</h2>
       </div>
-    </article>
+      <div className="about-data-box">
+        {aboutData.map((el, idx) => {
+          return <AboutContents key={idx} contents={el} />;
+        })}
+      </div>
+    </div>
   );
 };
 
