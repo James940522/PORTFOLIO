@@ -61,6 +61,7 @@ $titleFont: "Black Han Sans", sans-serif;
   .section-title-imgBox {
     margin: 0 1em;
     opacity: 0.65;
+    cursor: pointer;
   }
   .section-title {
     @include fontStyle(#000000, _, 3rem, 400);

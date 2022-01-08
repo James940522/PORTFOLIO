@@ -7,7 +7,7 @@ import "./index.scss";
 const About = () => {
   console.log(aboutData);
   return (
-    <div id="about-section">
+    <article id="about-section">
       <div className="section-title-container">
         <div className="section-title-imgBox">
           <img src={blackLink} alt="blackLink" width="32px" height="32px" />
@@ -19,7 +19,7 @@ const About = () => {
           return <AboutContents key={idx} contents={el} />;
         })}
       </div>
-    </div>
+    </article>
   );
 };
 

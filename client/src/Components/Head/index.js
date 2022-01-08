@@ -2,7 +2,7 @@ import "./index.scss";
 
 const Head = () => {
   return (
-    <section className="head-section">
+    <article className="head-section">
       <div className="head-title-box">
         <h1>
           - 정재민 -
@@ -21,7 +21,7 @@ const Head = () => {
       <button id="head-btn" onClick={() => {}}>
         더 알아보기 ↓
       </button>
-    </section>
+    </article>
   );
 };
 

@@ -5,6 +5,10 @@ import telephone from "../assets/telephone.png";
 import email from "../assets/email.png";
 import pencil from "../assets/pencil.png";
 
+import front from "../assets/Front.png";
+import back from "../assets/back.png";
+import others from "../assets/others.png";
+
 const aboutData = [
   {
     img: user,
@@ -38,4 +42,9 @@ const aboutData = [
   },
 ];
 
-export { aboutData };
+const stacks = [
+  { title: "Front-end", img: front },
+  { title: "Back-end", img: back },
+  { title: "Others", img: others },
+];
+export { aboutData, stacks };
