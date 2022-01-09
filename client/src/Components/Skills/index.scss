@@ -1,15 +1,27 @@
 @import "../../Common.scss";
 
 #skills-section {
-  width: 100%;
-  max-width: 71.25rem;
-  padding: 4rem 2rem;
-  margin: 0 auto;
-  height: 79rem;
   background: #f9c51d;
-  .sk-color {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #000000;
+  .skills-sectionBox {
+    width: 100%;
+    max-width: 80.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    height: 50rem;
+    .section-title-container {
+      @include flexBox(flex, center, center, _);
+      .sk-color {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #000000;
+      }
+    }
+    .skills-contents {
+      width: 100%;
+      display: flex;
+      //   align-content: space-evenly;
+      flex-flow: column wrap;
+      height: calc(100% - (7.5rem + 1px));
+    }
   }
 }
