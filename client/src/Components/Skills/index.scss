@@ -7,7 +7,7 @@
     max-width: 80.25rem;
     padding: 4rem 2rem;
     margin: 0 auto;
-    height: 50rem;
+    // height: 75rem;
     .section-title-container {
       @include flexBox(flex, center, center, _);
       .sk-color {
@@ -18,9 +18,9 @@
     }
     .skills-contents {
       width: 100%;
-      display: flex;
-      //   align-content: space-evenly;
-      flex-flow: column wrap;
+      @include flexBox(flex, center, space-around, _);
+      //   @include flexBox(flex, _, space-around, _);
+      flex-flow: row wrap;
       height: calc(100% - (7.5rem + 1px));
     }
   }
