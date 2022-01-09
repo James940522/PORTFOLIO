@@ -4,7 +4,7 @@
   //   border: 1px solid red;
   text-align: center;
   position: relative;
-  @include widthHeight(100%, 30.5rem);
+  @include widthHeight(_, 30.5rem);
   @include flexBox(flex, space-evenly, center, column);
   padding: calc(4rem + 4.5rem) 2rem 4rem;
   color: #fff;
