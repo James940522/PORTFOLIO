@@ -6,6 +6,11 @@
   width: 100%;
   max-width: 71.25rem;
   @include flexBox(flex, _, _, column);
+  .at-color {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
   .about-data-box {
     @include flexBox(flex, _, center, _);
     flex-flow: row wrap;

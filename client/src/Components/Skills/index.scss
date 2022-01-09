@@ -1,0 +1,15 @@
+@import "../../Common.scss";
+
+#skills-section {
+  width: 100%;
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  height: 79rem;
+  background: #f9c51d;
+  .sk-color {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+  }
+}

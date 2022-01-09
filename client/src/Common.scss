@@ -66,8 +66,5 @@ $titleFont: "Black Han Sans", sans-serif;
   .section-title {
     @include fontStyle(#000000, _, 3rem, 400);
     font-family: $titleFont;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #cccccc;
   }
 }

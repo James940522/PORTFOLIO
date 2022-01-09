@@ -12,7 +12,7 @@ const About = () => {
         <div className="section-title-imgBox">
           <img src={blackLink} alt="blackLink" width="32px" height="32px" />
         </div>
-        <h2 className="section-title">ABOUT ME</h2>
+        <h2 className="section-title at-color">ABOUT ME</h2>
       </div>
       <div className="about-data-box">
         {aboutData.map((el, idx) => {
