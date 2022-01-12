@@ -73,4 +73,4 @@ const links = [
     ],
   },
 ];
-export { aboutData, stacks };
+export { aboutData, stacks, links };
