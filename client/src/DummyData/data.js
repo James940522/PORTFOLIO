@@ -9,6 +9,9 @@ import front from "../assets/Front.png";
 import back from "../assets/back.png";
 import others from "../assets/others.png";
 
+import github from "../assets/github.png";
+import velog from "../assets/velog.png";
+
 const aboutData = [
   {
     img: user,
@@ -46,5 +49,28 @@ const stacks = [
   { title: "Front-end", img: front },
   { title: "Back-end", img: back },
   { title: "Others", img: others },
+];
+
+const links = [
+  {
+    title: github,
+    link: "https://github.com/James940522",
+    contents: "소스 코드 저장소입니다.",
+    explain: [
+      "과거 프로젝트 소스 코드",
+      "코딩 연습 소스코드",
+      "스터디 레파지토리",
+    ],
+  },
+  {
+    title: velog,
+    link: "https://velog.io/@woals3000",
+    contents: "공부 및 회고 목적 블로그입니다.",
+    explain: [
+      "공부한 것을 진정한 나의 것으로 만들기 위한 기록",
+      "웹 개발자의 길을 걸으며 공부한 웹 관련 지식 정리",
+      "나 자신을 돌아보는 회고 기록",
+    ],
+  },
 ];
 export { aboutData, stacks };
