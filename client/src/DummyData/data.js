@@ -54,6 +54,7 @@ const stacks = [
 const links = [
   {
     title: github,
+    id: "github",
     link: "https://github.com/James940522",
     contents: "소스 코드 저장소입니다.",
     explain: [
@@ -64,6 +65,7 @@ const links = [
   },
   {
     title: velog,
+    id: "velog",
     link: "https://velog.io/@woals3000",
     contents: "공부 및 회고 목적 블로그입니다.",
     explain: [
