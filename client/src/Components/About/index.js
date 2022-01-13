@@ -5,7 +5,6 @@ import blackLink from "../../assets/black-link.png";
 import "./index.scss";
 
 const About = () => {
-  console.log(aboutData);
   return (
     <article id="about-section">
       <div className="section-title-container">

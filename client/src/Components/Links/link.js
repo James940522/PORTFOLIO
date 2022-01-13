@@ -1,7 +1,9 @@
 function LinkContents({ contents }) {
   return (
-    <div>
-      <div>{contents.title}</div>
+    <div className="link-card">
+      <div>
+        <img src={contents.title} />
+      </div>
     </div>
   );
 }

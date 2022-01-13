@@ -12,8 +12,8 @@ const Links = () => {
         </div>
         <h2 className="section-title sk-color">SKILLS</h2>
         <div className="link-contentsBox">
-          {links.map((el) => {
-            return <LinkContents contents={el} />;
+          {links.map((el, idx) => {
+            return <LinkContents key={idx} contents={el} />;
           })}
         </div>
       </div>

@@ -10,7 +10,6 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    console.log(scrollY);
     window.addEventListener("scroll", updateScroll);
   }, [scrollY]);
 
